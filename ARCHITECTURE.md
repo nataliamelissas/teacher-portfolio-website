@@ -5,12 +5,12 @@
 This is a static, single-page portfolio site with no build step or runtime dependencies.
 
 - `index.html` contains the document structure and the About section.
-- `style.css` contains all presentation rules, including responsive layout and accessible focus states.
+- `style.css` contains all presentation rules, including the centered social icon strip, responsive layout, and accessible focus states.
 - `AGENTS.md` is the source of approved profile information and project constraints.
 
 ## Feature boundary
 
-The current implementation includes only the About section. It uses semantic HTML and static content. JavaScript, external assets, and additional portfolio sections are intentionally excluded until a feature requires them.
+The current implementation includes the About section and a small, static social-media icon strip at the top of the page. It uses semantic HTML and static content. JavaScript, external assets, and additional portfolio sections are intentionally excluded until a feature requires them.
 
 ## Design system
 
