@@ -8,6 +8,7 @@ This is a static, single-page portfolio site with no build step or runtime depen
 - `style.css` contains all presentation rules, including the centered social icon strip, responsive layout, and accessible focus states.
 - `AGENTS.md` is the source of approved profile information and project constraints.
 - `.github/skills/teaching-project-interview/SKILL.md` defines the repository-local interview workflow for documenting one teaching or instructional design project at a time.
+- `.github/skills/teach-me/SKILL.md` defines the repository-local teaching workflow for explaining code, repositories, AI, and GitHub concepts.
 
 ## Feature boundary
 
@@ -29,3 +30,8 @@ The teaching project interview skill is documentation-only. It has no runtime
 dependencies or build step. It asks one focused question at a time, records
 user-provided facts for the required project fields, and produces a concise
 summary without inventing outcomes or accomplishments.
+
+The teach-me skill is documentation-only. It has no runtime dependencies or
+build step. It explains concepts in focused steps, uses practical examples and
+official resources when relevant, and ends with three multiple-choice
+understanding checks.
