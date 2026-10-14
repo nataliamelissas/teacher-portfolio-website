@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
     <nav class="social-carousel" aria-label="Social media">
       <ul>
         <li><span role="img" aria-label="LinkedIn">💼</span></li>
@@ -20,9 +22,15 @@
 
     <header class="site-header">
       <a class="site-title" href="index.html">Teresa Pizarro</a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
+    <main id="content">
       <section class="about-section" id="about" aria-labelledby="about-title">
         <div class="about-content">
           <p class="eyebrow">About me</p>
@@ -56,6 +64,20 @@
             </div>
           </dl>
         </aside>
+      </section>
+
+      <section
+        class="projects-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="projects-content">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Projects coming soon.</h2>
+          <p>
+            Project details will be added when the relevant facts are ready.
+          </p>
+        </div>
       </section>
     </main>
   </body>

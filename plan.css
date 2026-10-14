@@ -1,0 +1,420 @@
+:root {
+  color-scheme: light;
+  --navy: #17324d;
+  --navy-deep: #10263a;
+  --cream: #f7f2e8;
+  --teal: #2f7f7a;
+  --teal-light: #d9ebe6;
+  --ink-muted: #4b5b68;
+  --white: #ffffff;
+  --line: rgb(23 50 77 / 15%);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  color: var(--navy);
+  background: var(--cream);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(circle at 8% 8%, var(--teal-light), transparent 24rem),
+    radial-gradient(circle at 95% 35%, rgb(255 255 255 / 70%), transparent 28rem),
+    var(--cream);
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  z-index: 1;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.35rem;
+  color: var(--white);
+  background: var(--navy-deep);
+  transform: translateY(-180%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.page-frame {
+  width: min(100% - 2rem, 78rem);
+  margin: 0 auto;
+  padding: 4rem 0 3rem;
+}
+
+.plan-header {
+  max-width: 52rem;
+  padding: 2rem 0 5rem;
+}
+
+.header-copy {
+  max-width: 42rem;
+}
+
+.eyebrow,
+.week-kicker,
+.session-label {
+  font-family: Arial, sans-serif;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 10ch;
+  margin-bottom: 1.5rem;
+  color: var(--navy-deep);
+  font-size: clamp(3.25rem, 8vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+h1 span {
+  color: var(--teal);
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 1fr);
+  column-gap: 2rem;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+
+.section-heading .eyebrow {
+  grid-row: span 2;
+  align-self: start;
+}
+
+h2 {
+  max-width: 27rem;
+  margin-bottom: 0.75rem;
+  color: var(--navy-deep);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.section-heading > p:last-child {
+  max-width: 32rem;
+  margin-bottom: 0;
+  color: var(--ink-muted);
+}
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.week-card {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-top: 0.35rem solid var(--teal);
+  background: rgb(255 255 255 / 76%);
+  box-shadow: 0 0.75rem 2rem rgb(23 50 77 / 7%);
+}
+
+.week-two {
+  border-top-color: var(--navy);
+}
+
+.week-three {
+  border-top-color: #b87545;
+}
+
+.week-four {
+  border-top-color: #8a5c87;
+}
+
+.week-heading {
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.week-number {
+  margin: 0.1rem 0 0;
+  color: var(--teal);
+  font-family: Arial, sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.week-two .week-number {
+  color: var(--navy);
+}
+
+.week-three .week-number {
+  color: #b87545;
+}
+
+.week-four .week-number {
+  color: #8a5c87;
+}
+
+.week-kicker,
+.session-label {
+  margin-bottom: 0.35rem;
+  color: var(--teal);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.week-two .week-kicker,
+.week-two .session-label {
+  color: var(--navy);
+}
+
+.week-three .week-kicker,
+.week-three .session-label {
+  color: #9c5f32;
+}
+
+.week-four .week-kicker,
+.week-four .session-label {
+  color: #704b6d;
+}
+
+h3 {
+  max-width: 18ch;
+  margin-bottom: 0;
+  color: var(--navy-deep);
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.week-summary {
+  min-height: 3rem;
+  margin: 1.5rem 0;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-muted);
+}
+
+.session-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.session-card {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.9rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.session-number {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--teal);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.week-two .session-number {
+  background: var(--navy);
+}
+
+.week-three .session-number {
+  background: #b87545;
+}
+
+.week-four .session-number {
+  background: #8a5c87;
+}
+
+h4 {
+  margin-bottom: 0.45rem;
+  color: var(--navy-deep);
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.session-points {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--ink-muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.session-points li::marker {
+  color: var(--teal);
+}
+
+.week-two .session-points li::marker {
+  color: var(--navy);
+}
+
+.week-three .session-points li::marker {
+  color: #b87545;
+}
+
+.week-four .session-points li::marker {
+  color: #8a5c87;
+}
+
+.session-points strong {
+  color: var(--navy);
+}
+
+.session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.copy-button {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--teal);
+  border-radius: 0.3rem;
+  color: var(--navy-deep);
+  background: var(--teal-light);
+  font-family: Arial, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  color: var(--white);
+  background: var(--teal);
+}
+
+.copy-button:focus-visible {
+  outline: 0.2rem solid var(--navy-deep);
+  outline-offset: 0.2rem;
+}
+
+.copy-status {
+  min-height: 1.1rem;
+  color: var(--teal);
+  font-family: Arial, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+@media (max-width: 60rem) {
+  .plan-header {
+    max-width: 42rem;
+  }
+}
+
+@media (max-width: 46rem) {
+  .page-frame {
+    width: min(100% - 1.5rem, 40rem);
+    padding-top: 2rem;
+  }
+
+  .plan-header {
+    padding: 1rem 0 3.5rem;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+
+  .section-heading,
+  .week-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    gap: 0.75rem;
+  }
+
+  .section-heading .eyebrow {
+    grid-row: auto;
+  }
+
+  .week-grid {
+    gap: 1rem;
+  }
+
+  .week-card {
+    padding: 1.25rem;
+  }
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background: var(--white);
+  }
+
+  .page-frame {
+    width: 100%;
+    padding: 0;
+  }
+
+  .week-grid {
+    gap: 0.75rem;
+  }
+
+  .week-card {
+    break-inside: avoid;
+  }
+
+  .session-card {
+    break-inside: avoid;
+  }
+
+  .session-actions {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
